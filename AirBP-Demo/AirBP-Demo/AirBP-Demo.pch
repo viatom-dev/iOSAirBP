@@ -1,0 +1,174 @@
+//
+//  BP.pch
+//  BP
+//
+//  Created by Viatom on 2017/3/20.
+//  Copyright © 2017 Viatom. All rights reserved.
+//
+
+#ifndef BP_pch
+#define BP_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BP_pch */
+
+// adaptation iphonex
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_X (IS_IPHONE && kScreenHeight >= 812.0)
+#define IS_IPHONE_MIN [[UIScreen mainScreen] bounds].size.width == 320
+//#define IS_IPHONE_SE [[Common getDeviceName] rangeOfString:@"iPhone SE"].location != NSNotFound
+#define IS_IPAD [[Common getDeviceName] rangeOfString:@"iPad"].location != NSNotFound
+#define IS_IPAD_PRO_9 [[Common getDeviceName] rangeOfString:@"iPad Pro 9.7"].location != NSNotFound
+#define IS_IPAD_PRO_10 [[Common getDeviceName] rangeOfString:@"iPad Pro 10.5"].location != NSNotFound
+#define IS_IPAD_PRO_12 [[Common getDeviceName] rangeOfString:@"iPad Pro 12.9"].location != NSNotFound
+#define IS_IPHONE_PLUS [[Common getDeviceName] rangeOfString:@"Plus"].location != NSNotFound
+
+
+#define ADDDATANOTIFICATION @"ADDDATANOTIFICATION"
+#define EDITDATANOTIFICAITON @"EDITDATANOTIFICAITON"
+#define DELETEDATANOTIFICATION @"DELETEDATANOTIFICATION"
+#define SWITCHIDNOTIFICATION @"SWITCHIDNOTIFICATION"
+
+
+
+#define NAV_BAR_HEIGHT [Common navbarHeight]
+#define STATUS_BAR_HEIGHT [Common statusbarHeight]
+#define TAB_BAR_HEIGHT [Common tabbarHeight]
+#define HOME_BAR_HEIGHT [Common homebarHeight]  ///    iphone x Keep the bottom high
+
+//PDF
+#define A4_width 210   //  210(mm)
+#define A4_height 297  //  297(mm)
+
+#define point_per_mm 3.0 //  1mm Corresponding points   (point)
+#define whole_width (A4_width * point_per_mm)       //Full screen width  (point)
+#define whole_height (A4_height * point_per_mm)     //Full screen height  (point)
+
+
+// ---------
+#define LXUserDefaults  [NSUserDefaults standardUserDefaults]
+
+#define IsConneted @"isConnecting"
+
+#define monitor_measure @"measure"
+
+#define VolumeFormer @"VolumeFormer"    // Record the volume originally set by the user and reset it after the program ends
+
+#define kNotiCenter_ResultChanged @"kNotiCenter_ResultChanged"    // Monitor changes in measurement results
+#define kNotiCenInfo_ResultArrKey @"kNotiCenInfo_ResultArrKey"
+
+
+
+//Color and transparency settings
+#define RGBA(r,g,b,a)  [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
+
+#define font(a)  [UIFont systemFontOfSize:a]
+
+//main color tone
+#define DEFAULT_BLUE   [UIColor colorWithRed:(float)38/255.0f green:(float)154/255.0f blue:(float)208/255.0f alpha:1]
+
+#define Di_Color_Back RGB(239, 239, 244)
+
+#define LIGHT_GREY (RGB(215, 215, 215))
+
+
+//-----------------------screen size------------------
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+
+//----------------------- DLog print output in Debug mode, no output in release mode ------------------
+#if defined(DEBUG) || defined(_DEBUG)
+#define DLog( s, ... )   NSLog( @"<%@,(line=%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define DLog( s, ... )
+#define NSLog(...)
+#endif
+
+//---------------------Current system version------------------
+#define kVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define NotiCenter_TabbarSeleced @"NotiCenter_TabbarSeleced"  //Tabbar selected page
+#define DefaultBleName   @"DefaultBleName" //Bound Bluetooth
+#define DefaultBleNameSN   @"DefaultBleNameSN" //Bound Bluetooth
+#define DefaultBleNamefw_version  @"DefaultBleNamefw_version" //Bound Bluetooth
+#define DefaultBleNamebl_version  @"DefaultBleNamebl_version"   // bootloader version number
+#define MY_BP_NAME @"my_smartBP_name"
+#define MY_BP_ORIGINAL_NAME @"my_bp_original_name"  // Original name
+#define MY_BP_SN @"my_smartBP_sn"
+#define MY_BP_CODE @"branchCode"
+#define MY_BP_VOICE_STATUS @"voiceStatus"  // The switch state of the buzzer
+#define LOOKEE_BP_CODE_ARRAY @[@"31020001"]  // Agent
+#define IS_LOOKEE_DEVICE [LXUserDefaults objectForKey:MY_BP_CODE] && [LOOKEE_BP_CODE_ARRAY containsObject:[LXUserDefaults objectForKey:MY_BP_CODE]]
+#define MY_BP_INTERNATIONAL_CODE_PLUS @"31040001"   // AirBP International Code：31040001     -- plus
+#define MY_BP_DOMESTIC_CODE_PLUS @"31030001"    // AirBP domestic Code：31030001  -- plus
+#define MY_BP_PLUS_CODE_ARRAY @[MY_BP_INTERNATIONAL_CODE_PLUS, MY_BP_DOMESTIC_CODE_PLUS]
+#define IS_AirBP_Plus [VTSingletonClass sharedSingletonClass].isAirBPPlus  // whether AirBP Plus
+
+//---------------Notification-communication with Bluetooth----------
+#define kNotiCenter_GetConfigSuccess @"kNotiCenter_GetConfigSuccess"
+#define kNotiCenter_GetConfigFailed @"kNotiCenter_GetConfigFailed"
+#define kNotiCenter_SetBeepSuccess @"kNotiCenter_SetBeepSuccess"
+#define kNotiCenter_SetBeepFailed @"kNotiCenter_SetBeepFailed"
+#define kNotiCenterInfo_GetDevInfoSuccess @"kNotiCenterInfo_GetDevInfoSuccess"
+#define kNotiCenterInfo_GetDevInfoFailed @"kNotiCenterInfo_GetDevInfoFailed"
+#define kNotiCenterInfo_GetBatteryStatusSuccess @"kNotiCenterInfo_GetBatteryStatusSuccess"
+#define kNotiCenInfo_ConfigDataKey @"kNotiCenInfo_ConfigDataKey"
+#define kNotiCenInfo_DevInfoDataKey @"kNotiCenInfo_DevInfoDataKey"
+#define kNotiCenInfo_BatteryStatusDataKey @"kNotiCenInfo_BatteryStatusDataKey"
+
+
+#define kAlertDeflate @"AlertDeflate"   // Whether to prompt to deflate
+
+#define My_Acount @"my_acount"
+#define My_Password @"password"
+
+#define RGB(r,g,b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+#define kDefaultGreen [UIColor colorWithRed:182/255.0 green:214/255.0 blue:163/255.0 alpha:1.0f]
+
+#define LastUserID  @"LastUserID"
+
+#define k_Result_Monitor_DateStr_Key @"Result_Monitor_DateStr_Key"  // Record the time when the result is obtained by the device, To de-duplicate
+#define k_Result_TimeStr_Key @"Result_TimeStr_Key"  // Record the time of use of the equipment to produce results
+
+
+//--------------- Bluetooth Updater ----------
+#define k_Updater_Name_Arr @[@"SmartBP Updater", @"AirBP Updater"]
+#define k_SmartBP_Updater_Name @"SmartBP Updater"
+#define k_AirBP_Updater_Name @"AirBP Updater"
+
+#define Software @"software"    //Firmware version
+#define BootloaderVer @"BootloaderVer"   // bootloader version number
+#define Is_Update_Hardware @"Is_Update_Hardware" //There is an updateable version
+#define IsUpdate_Firmware @"IsUpdate_Firmware"   //Is the firmware being updated
+#define IsUpdate_Number @"IsUpdate_Number"  //Upgradeable    Quantity 1, 2
+
+#define kProtocol @"0.5"    //Mandatory upgrade version limit  >This version number can be used normally? Otherwise upgrade
+
+
+#define kServiceURL @"https://api.viatomtech.com.cn/update/o2s/query"
+
+#define kDeviceName IS_AirBP_Plus ? @"airbppro" : @"airbp"
+
+
+//---------------Network request----------
+#define MAINURL           @"https://cloud.viatomtech.com/"
+#define Url_login         MAINURL@"user/login" //login
+#define Url_Rigster       MAINURL@"register" //register
+
+#define URL_ALL(s) [NSString stringWithFormat:@"%@%@",MAINURL,s]
+
+
+//---------------------PKG-------------------------
+//#import "Common.h"
+typedef unsigned char   U8;
+typedef unsigned short  U16;
+typedef unsigned int    U32;
+
+#import "AppDelegate.h"
+#import "PublicUtils.h"
+#import "VTSingletonClass.h"
+#import "VTCommon.h"
+#import "MBProgressHUD.h"

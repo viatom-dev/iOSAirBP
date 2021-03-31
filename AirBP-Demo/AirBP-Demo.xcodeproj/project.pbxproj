@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F389AD2D2611D13F00A15451 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F389AD292611D13F00A15451 /* MBProgressHUD.m */; };
+		F389AD2E2611D13F00A15451 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F389AD2A2611D13F00A15451 /* LICENSE */; };
+		F389AD2F2611D13F00A15451 /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = F389AD2C2611D13F00A15451 /* README.mdown */; };
+		F3931C90260B3C6B00CADFC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931C8F260B3C6B00CADFC9 /* AppDelegate.m */; };
+		F3931C93260B3C6B00CADFC9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931C92260B3C6B00CADFC9 /* SceneDelegate.m */; };
+		F3931C96260B3C6B00CADFC9 /* VTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931C95260B3C6B00CADFC9 /* VTViewController.m */; };
+		F3931C99260B3C6B00CADFC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3931C97260B3C6B00CADFC9 /* Main.storyboard */; };
+		F3931C9C260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3931C9A260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodeld */; };
+		F3931C9E260B3C6C00CADFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3931C9D260B3C6C00CADFC9 /* Assets.xcassets */; };
+		F3931CA1260B3C6C00CADFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3931C9F260B3C6C00CADFC9 /* LaunchScreen.storyboard */; };
+		F3931CA4260B3C6C00CADFC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931CA3260B3C6C00CADFC9 /* main.m */; };
+		F3931CAE260B3C6C00CADFC9 /* AirBP_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931CAD260B3C6C00CADFC9 /* AirBP_DemoTests.m */; };
+		F3931CB9260B3C6C00CADFC9 /* AirBP_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931CB8260B3C6C00CADFC9 /* AirBP_DemoUITests.m */; };
+		F3931F38260B56F000CADFC9 /* UARTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931F37260B56F000CADFC9 /* UARTPeripheral.m */; };
+		F3931F40260B570000CADFC9 /* BTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931F3D260B570000CADFC9 /* BTUtils.m */; };
+		F3931F41260B570000CADFC9 /* BTCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = F3931F3F260B570000CADFC9 /* BTCommunication.m */; };
+		F39321C8260B60DC00CADFC9 /* StartWritePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321BF260B60DC00CADFC9 /* StartWritePkg.m */; };
+		F39321C9260B60DC00CADFC9 /* WriteContentPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321C1260B60DC00CADFC9 /* WriteContentPkg.m */; };
+		F39321CA260B60DC00CADFC9 /* CommonlyPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321C3260B60DC00CADFC9 /* CommonlyPkg.m */; };
+		F39321CB260B60DC00CADFC9 /* PublicUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321C4260B60DC00CADFC9 /* PublicUtils.m */; };
+		F39321CC260B60DC00CADFC9 /* EndWritePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321C6260B60DC00CADFC9 /* EndWritePkg.m */; };
+		F39321DA260B60F800CADFC9 /* ReadContentPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321D0260B60F800CADFC9 /* ReadContentPkg.m */; };
+		F39321DB260B60F800CADFC9 /* ReadContentAckPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321D5260B60F800CADFC9 /* ReadContentAckPkg.m */; };
+		F39321DC260B60F800CADFC9 /* StartReadPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321D7260B60F800CADFC9 /* StartReadPkg.m */; };
+		F39321DD260B60F800CADFC9 /* StartReadAckPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321D8260B60F800CADFC9 /* StartReadAckPkg.m */; };
+		F39321DE260B60F800CADFC9 /* EndReadPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321D9260B60F800CADFC9 /* EndReadPkg.m */; };
+		F39321E4260B610500CADFC9 /* InformationPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321E3260B610500CADFC9 /* InformationPkg.m */; };
+		F39321EC260B611100CADFC9 /* FileListAckPfg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321E8260B611100CADFC9 /* FileListAckPfg.m */; };
+		F39321ED260B611100CADFC9 /* FileListPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321EB260B611100CADFC9 /* FileListPkg.m */; };
+		F39321F3260B611B00CADFC9 /* ResetPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321F1260B611B00CADFC9 /* ResetPkg.m */; };
+		F39321F9260B612300CADFC9 /* RestorefactoryPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321F7260B612300CADFC9 /* RestorefactoryPkg.m */; };
+		F39321FF260B612A00CADFC9 /* BatteryStatusPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F39321FE260B612A00CADFC9 /* BatteryStatusPkg.m */; };
+		F3932205260B613200CADFC9 /* SetFactoryConfigPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932204260B613200CADFC9 /* SetFactoryConfigPkg.m */; };
+		F393220B260B614000CADFC9 /* SetTimePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393220A260B614000CADFC9 /* SetTimePkg.m */; };
+		F3932211260B614900CADFC9 /* DeviceTempPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393220F260B614900CADFC9 /* DeviceTempPkg.m */; };
+		F3932217260B615000CADFC9 /* ConfiguartionPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932215260B615000CADFC9 /* ConfiguartionPkg.m */; };
+		F393221D260B615A00CADFC9 /* CalibrationZeroPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393221C260B615A00CADFC9 /* CalibrationZeroPkg.m */; };
+		F3932223260B616300CADFC9 /* CalibrationSlopePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932222260B616300CADFC9 /* CalibrationSlopePkg.m */; };
+		F3932229260B616B00CADFC9 /* StopPressurePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932227260B616B00CADFC9 /* StopPressurePkg.m */; };
+		F393222F260B617200CADFC9 /* VoiceControlPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393222D260B617200CADFC9 /* VoiceControlPkg.m */; };
+		F3932235260B617900CADFC9 /* MeasureResultPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932234260B617900CADFC9 /* MeasureResultPkg.m */; };
+		F393223B260B618200CADFC9 /* MeasureStatusPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393223A260B618200CADFC9 /* MeasureStatusPkg.m */; };
+		F3932241260B618B00CADFC9 /* StartMeasurePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932240260B618B00CADFC9 /* StartMeasurePkg.m */; };
+		F3932247260B619300CADFC9 /* EndMeasurePkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932246260B619300CADFC9 /* EndMeasurePkg.m */; };
+		F393224D260B619B00CADFC9 /* AnswerPkg.m in Sources */ = {isa = PBXBuildFile; fileRef = F393224C260B619B00CADFC9 /* AnswerPkg.m */; };
+		F3932272260B656E00CADFC9 /* VTSingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932271260B656E00CADFC9 /* VTSingletonClass.m */; };
+		F3932278260B65BD00CADFC9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3932277260B65BD00CADFC9 /* HealthKit.framework */; };
+		F39322A7260C33C300CADFC9 /* VTRealTimePressureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932293260C33C200CADFC9 /* VTRealTimePressureInfo.m */; };
+		F39322A8260C33C300CADFC9 /* VTFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932295260C33C300CADFC9 /* VTFileParser.m */; };
+		F39322A9260C33C300CADFC9 /* VTPlusConfigurationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932296260C33C300CADFC9 /* VTPlusConfigurationInfo.m */; };
+		F39322AA260C33C300CADFC9 /* VTCalibrationSlopeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932298260C33C300CADFC9 /* VTCalibrationSlopeInfo.m */; };
+		F39322AB260C33C300CADFC9 /* VTBloodPressureResultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3932299260C33C300CADFC9 /* VTBloodPressureResultInfo.m */; };
+		F39322AC260C33C300CADFC9 /* VTBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F393229C260C33C300CADFC9 /* VTBatteryInfo.m */; };
+		F39322AD260C33C300CADFC9 /* VTConfiguartionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F393229D260C33C300CADFC9 /* VTConfiguartionInfo.m */; };
+		F39322AE260C33C300CADFC9 /* VTCalibrationZeroInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322A2260C33C300CADFC9 /* VTCalibrationZeroInfo.m */; };
+		F39322AF260C33C300CADFC9 /* VTDeviceTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322A3260C33C300CADFC9 /* VTDeviceTemp.m */; };
+		F39322B0260C33C300CADFC9 /* VTDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322A4260C33C300CADFC9 /* VTDeviceInfo.m */; };
+		F39322E0260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322DE260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.m */; };
+		F39322E6260D702F00CADFC9 /* UIBezierPath+Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322E5260D702F00CADFC9 /* UIBezierPath+Smoothing.m */; };
+		F39322EC260D704D00CADFC9 /* VTDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F39322EB260D704D00CADFC9 /* VTDrawView.m */; };
+		F393230F260DE58100CADFC9 /* VTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F393230E260DE58100CADFC9 /* VTCommon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3931CAA260B3C6C00CADFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3931C83260B3C6B00CADFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3931C8A260B3C6B00CADFC9;
+			remoteInfo = "AirBP-Demo";
+		};
+		F3931CB5260B3C6C00CADFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3931C83260B3C6B00CADFC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3931C8A260B3C6B00CADFC9;
+			remoteInfo = "AirBP-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F389AD292611D13F00A15451 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F389AD2A2611D13F00A15451 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F389AD2B2611D13F00A15451 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F389AD2C2611D13F00A15451 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		F3931C8B260B3C6B00CADFC9 /* AirBP-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirBP-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3931C8E260B3C6B00CADFC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3931C8F260B3C6B00CADFC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3931C91260B3C6B00CADFC9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F3931C92260B3C6B00CADFC9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F3931C94260B3C6B00CADFC9 /* VTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTViewController.h; sourceTree = "<group>"; };
+		F3931C95260B3C6B00CADFC9 /* VTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTViewController.m; sourceTree = "<group>"; };
+		F3931C98260B3C6B00CADFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3931C9B260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirBP_Demo.xcdatamodel; sourceTree = "<group>"; };
+		F3931C9D260B3C6C00CADFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3931CA0260B3C6C00CADFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3931CA2260B3C6C00CADFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3931CA3260B3C6C00CADFC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3931CA9260B3C6C00CADFC9 /* AirBP-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AirBP-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3931CAD260B3C6C00CADFC9 /* AirBP_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirBP_DemoTests.m; sourceTree = "<group>"; };
+		F3931CAF260B3C6C00CADFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3931CB4260B3C6C00CADFC9 /* AirBP-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AirBP-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3931CB8260B3C6C00CADFC9 /* AirBP_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirBP_DemoUITests.m; sourceTree = "<group>"; };
+		F3931CBA260B3C6C00CADFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3931F36260B56F000CADFC9 /* UARTPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARTPeripheral.h; sourceTree = "<group>"; };
+		F3931F37260B56F000CADFC9 /* UARTPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARTPeripheral.m; sourceTree = "<group>"; };
+		F3931F3C260B570000CADFC9 /* BTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUtils.h; sourceTree = "<group>"; };
+		F3931F3D260B570000CADFC9 /* BTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUtils.m; sourceTree = "<group>"; };
+		F3931F3E260B570000CADFC9 /* BTCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCommunication.h; sourceTree = "<group>"; };
+		F3931F3F260B570000CADFC9 /* BTCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCommunication.m; sourceTree = "<group>"; };
+		F3931F46260B574900CADFC9 /* BleHeaderfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleHeaderfile.h; sourceTree = "<group>"; };
+		F3931F47260B574A00CADFC9 /* BTDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDefines.h; sourceTree = "<group>"; };
+		F3931F4B260B57E700CADFC9 /* VTNoticeName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNoticeName.h; sourceTree = "<group>"; };
+		F39321BD260B60DC00CADFC9 /* TypesDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesDef.h; sourceTree = "<group>"; };
+		F39321BE260B60DC00CADFC9 /* EndWritePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndWritePkg.h; sourceTree = "<group>"; };
+		F39321BF260B60DC00CADFC9 /* StartWritePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartWritePkg.m; sourceTree = "<group>"; };
+		F39321C0260B60DC00CADFC9 /* WriteContentPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteContentPkg.h; sourceTree = "<group>"; };
+		F39321C1260B60DC00CADFC9 /* WriteContentPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteContentPkg.m; sourceTree = "<group>"; };
+		F39321C2260B60DC00CADFC9 /* CommonlyPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonlyPkg.h; sourceTree = "<group>"; };
+		F39321C3260B60DC00CADFC9 /* CommonlyPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonlyPkg.m; sourceTree = "<group>"; };
+		F39321C4260B60DC00CADFC9 /* PublicUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicUtils.m; sourceTree = "<group>"; };
+		F39321C5260B60DC00CADFC9 /* PublicUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicUtils.h; sourceTree = "<group>"; };
+		F39321C6260B60DC00CADFC9 /* EndWritePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndWritePkg.m; sourceTree = "<group>"; };
+		F39321C7260B60DC00CADFC9 /* StartWritePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartWritePkg.h; sourceTree = "<group>"; };
+		F39321D0260B60F800CADFC9 /* ReadContentPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadContentPkg.m; sourceTree = "<group>"; };
+		F39321D1260B60F800CADFC9 /* ReadContentAckPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadContentAckPkg.h; sourceTree = "<group>"; };
+		F39321D2260B60F800CADFC9 /* EndReadPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndReadPkg.h; sourceTree = "<group>"; };
+		F39321D3260B60F800CADFC9 /* StartReadAckPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartReadAckPkg.h; sourceTree = "<group>"; };
+		F39321D4260B60F800CADFC9 /* StartReadPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartReadPkg.h; sourceTree = "<group>"; };
+		F39321D5260B60F800CADFC9 /* ReadContentAckPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadContentAckPkg.m; sourceTree = "<group>"; };
+		F39321D6260B60F800CADFC9 /* ReadContentPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadContentPkg.h; sourceTree = "<group>"; };
+		F39321D7260B60F800CADFC9 /* StartReadPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartReadPkg.m; sourceTree = "<group>"; };
+		F39321D8260B60F800CADFC9 /* StartReadAckPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartReadAckPkg.m; sourceTree = "<group>"; };
+		F39321D9260B60F800CADFC9 /* EndReadPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndReadPkg.m; sourceTree = "<group>"; };
+		F39321E2260B610500CADFC9 /* InformationPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationPkg.h; sourceTree = "<group>"; };
+		F39321E3260B610500CADFC9 /* InformationPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationPkg.m; sourceTree = "<group>"; };
+		F39321E8260B611100CADFC9 /* FileListAckPfg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListAckPfg.m; sourceTree = "<group>"; };
+		F39321E9260B611100CADFC9 /* FileListAckPfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileListAckPfg.h; sourceTree = "<group>"; };
+		F39321EA260B611100CADFC9 /* FileListPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileListPkg.h; sourceTree = "<group>"; };
+		F39321EB260B611100CADFC9 /* FileListPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListPkg.m; sourceTree = "<group>"; };
+		F39321F1260B611B00CADFC9 /* ResetPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPkg.m; sourceTree = "<group>"; };
+		F39321F2260B611B00CADFC9 /* ResetPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPkg.h; sourceTree = "<group>"; };
+		F39321F7260B612300CADFC9 /* RestorefactoryPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestorefactoryPkg.m; sourceTree = "<group>"; };
+		F39321F8260B612300CADFC9 /* RestorefactoryPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorefactoryPkg.h; sourceTree = "<group>"; };
+		F39321FD260B612A00CADFC9 /* BatteryStatusPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryStatusPkg.h; sourceTree = "<group>"; };
+		F39321FE260B612A00CADFC9 /* BatteryStatusPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryStatusPkg.m; sourceTree = "<group>"; };
+		F3932203260B613200CADFC9 /* SetFactoryConfigPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFactoryConfigPkg.h; sourceTree = "<group>"; };
+		F3932204260B613200CADFC9 /* SetFactoryConfigPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetFactoryConfigPkg.m; sourceTree = "<group>"; };
+		F3932209260B614000CADFC9 /* SetTimePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTimePkg.h; sourceTree = "<group>"; };
+		F393220A260B614000CADFC9 /* SetTimePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTimePkg.m; sourceTree = "<group>"; };
+		F393220F260B614900CADFC9 /* DeviceTempPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTempPkg.m; sourceTree = "<group>"; };
+		F3932210260B614900CADFC9 /* DeviceTempPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTempPkg.h; sourceTree = "<group>"; };
+		F3932215260B615000CADFC9 /* ConfiguartionPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfiguartionPkg.m; sourceTree = "<group>"; };
+		F3932216260B615000CADFC9 /* ConfiguartionPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfiguartionPkg.h; sourceTree = "<group>"; };
+		F393221B260B615A00CADFC9 /* CalibrationZeroPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationZeroPkg.h; sourceTree = "<group>"; };
+		F393221C260B615A00CADFC9 /* CalibrationZeroPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationZeroPkg.m; sourceTree = "<group>"; };
+		F3932221260B616300CADFC9 /* CalibrationSlopePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationSlopePkg.h; sourceTree = "<group>"; };
+		F3932222260B616300CADFC9 /* CalibrationSlopePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationSlopePkg.m; sourceTree = "<group>"; };
+		F3932227260B616B00CADFC9 /* StopPressurePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopPressurePkg.m; sourceTree = "<group>"; };
+		F3932228260B616B00CADFC9 /* StopPressurePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopPressurePkg.h; sourceTree = "<group>"; };
+		F393222D260B617200CADFC9 /* VoiceControlPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceControlPkg.m; sourceTree = "<group>"; };
+		F393222E260B617200CADFC9 /* VoiceControlPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceControlPkg.h; sourceTree = "<group>"; };
+		F3932233260B617900CADFC9 /* MeasureResultPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureResultPkg.h; sourceTree = "<group>"; };
+		F3932234260B617900CADFC9 /* MeasureResultPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureResultPkg.m; sourceTree = "<group>"; };
+		F3932239260B618200CADFC9 /* MeasureStatusPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureStatusPkg.h; sourceTree = "<group>"; };
+		F393223A260B618200CADFC9 /* MeasureStatusPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureStatusPkg.m; sourceTree = "<group>"; };
+		F393223F260B618B00CADFC9 /* StartMeasurePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMeasurePkg.h; sourceTree = "<group>"; };
+		F3932240260B618B00CADFC9 /* StartMeasurePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartMeasurePkg.m; sourceTree = "<group>"; };
+		F3932245260B619300CADFC9 /* EndMeasurePkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndMeasurePkg.h; sourceTree = "<group>"; };
+		F3932246260B619300CADFC9 /* EndMeasurePkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndMeasurePkg.m; sourceTree = "<group>"; };
+		F393224B260B619B00CADFC9 /* AnswerPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerPkg.h; sourceTree = "<group>"; };
+		F393224C260B619B00CADFC9 /* AnswerPkg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerPkg.m; sourceTree = "<group>"; };
+		F3932251260B61EB00CADFC9 /* AirBP-Demo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AirBP-Demo.pch"; sourceTree = "<group>"; };
+		F3932270260B656E00CADFC9 /* VTSingletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTSingletonClass.h; sourceTree = "<group>"; };
+		F3932271260B656E00CADFC9 /* VTSingletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTSingletonClass.m; sourceTree = "<group>"; };
+		F3932277260B65BD00CADFC9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F3932293260C33C200CADFC9 /* VTRealTimePressureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTRealTimePressureInfo.m; sourceTree = "<group>"; };
+		F3932294260C33C300CADFC9 /* VTCalibrationZeroInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCalibrationZeroInfo.h; sourceTree = "<group>"; };
+		F3932295260C33C300CADFC9 /* VTFileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTFileParser.m; sourceTree = "<group>"; };
+		F3932296260C33C300CADFC9 /* VTPlusConfigurationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPlusConfigurationInfo.m; sourceTree = "<group>"; };
+		F3932297260C33C300CADFC9 /* VTDeviceTemp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDeviceTemp.h; sourceTree = "<group>"; };
+		F3932298260C33C300CADFC9 /* VTCalibrationSlopeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCalibrationSlopeInfo.m; sourceTree = "<group>"; };
+		F3932299260C33C300CADFC9 /* VTBloodPressureResultInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBloodPressureResultInfo.m; sourceTree = "<group>"; };
+		F393229A260C33C300CADFC9 /* VTDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDeviceInfo.h; sourceTree = "<group>"; };
+		F393229B260C33C300CADFC9 /* VTBatteryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBatteryInfo.h; sourceTree = "<group>"; };
+		F393229C260C33C300CADFC9 /* VTBatteryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBatteryInfo.m; sourceTree = "<group>"; };
+		F393229D260C33C300CADFC9 /* VTConfiguartionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConfiguartionInfo.m; sourceTree = "<group>"; };
+		F393229E260C33C300CADFC9 /* VTPlusConfigurationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPlusConfigurationInfo.h; sourceTree = "<group>"; };
+		F393229F260C33C300CADFC9 /* VTRealTimePressureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTRealTimePressureInfo.h; sourceTree = "<group>"; };
+		F39322A0260C33C300CADFC9 /* VTConfiguartionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConfiguartionInfo.h; sourceTree = "<group>"; };
+		F39322A1260C33C300CADFC9 /* VTCalibrationSlopeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCalibrationSlopeInfo.h; sourceTree = "<group>"; };
+		F39322A2260C33C300CADFC9 /* VTCalibrationZeroInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCalibrationZeroInfo.m; sourceTree = "<group>"; };
+		F39322A3260C33C300CADFC9 /* VTDeviceTemp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDeviceTemp.m; sourceTree = "<group>"; };
+		F39322A4260C33C300CADFC9 /* VTDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDeviceInfo.m; sourceTree = "<group>"; };
+		F39322A5260C33C300CADFC9 /* VTFileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTFileParser.h; sourceTree = "<group>"; };
+		F39322A6260C33C300CADFC9 /* VTBloodPressureResultInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBloodPressureResultInfo.h; sourceTree = "<group>"; };
+		F39322DE260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConnectDeviceSuccessVC.m; sourceTree = "<group>"; };
+		F39322DF260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConnectDeviceSuccessVC.h; sourceTree = "<group>"; };
+		F39322E4260D702F00CADFC9 /* UIBezierPath+Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Smoothing.h"; sourceTree = "<group>"; };
+		F39322E5260D702F00CADFC9 /* UIBezierPath+Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Smoothing.m"; sourceTree = "<group>"; };
+		F39322EA260D704D00CADFC9 /* VTDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDrawView.h; sourceTree = "<group>"; };
+		F39322EB260D704D00CADFC9 /* VTDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDrawView.m; sourceTree = "<group>"; };
+		F39322F9260DDB1800CADFC9 /* TypesDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypesDef.h; sourceTree = "<group>"; };
+		F393230D260DE58100CADFC9 /* VTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCommon.h; sourceTree = "<group>"; };
+		F393230E260DE58100CADFC9 /* VTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCommon.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3931C88260B3C6B00CADFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3932278260B65BD00CADFC9 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CA6260B3C6C00CADFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CB1260B3C6C00CADFC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F389AD282611D13F00A15451 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F389AD2B2611D13F00A15451 /* MBProgressHUD.h */,
+				F389AD292611D13F00A15451 /* MBProgressHUD.m */,
+				F389AD2A2611D13F00A15451 /* LICENSE */,
+				F389AD2C2611D13F00A15451 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F3931C82260B3C6B00CADFC9 = {
+			isa = PBXGroup;
+			children = (
+				F3931C8D260B3C6B00CADFC9 /* AirBP-Demo */,
+				F3931CAC260B3C6C00CADFC9 /* AirBP-DemoTests */,
+				F3931CB7260B3C6C00CADFC9 /* AirBP-DemoUITests */,
+				F3931C8C260B3C6B00CADFC9 /* Products */,
+				F3932276260B65BD00CADFC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3931C8C260B3C6B00CADFC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3931C8B260B3C6B00CADFC9 /* AirBP-Demo.app */,
+				F3931CA9260B3C6C00CADFC9 /* AirBP-DemoTests.xctest */,
+				F3931CB4260B3C6C00CADFC9 /* AirBP-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3931C8D260B3C6B00CADFC9 /* AirBP-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F389AD282611D13F00A15451 /* MBProgressHUD */,
+				F3932292260C33AB00CADFC9 /* Model */,
+				F39322F5260DC3AE00CADFC9 /* View */,
+				F39322F4260DC35A00CADFC9 /* Controller */,
+				F39322F3260DC32A00CADFC9 /* Tools */,
+				F39322F0260DC0FF00CADFC9 /* BlueTooth */,
+				F3931C8E260B3C6B00CADFC9 /* AppDelegate.h */,
+				F3931C8F260B3C6B00CADFC9 /* AppDelegate.m */,
+				F3931C91260B3C6B00CADFC9 /* SceneDelegate.h */,
+				F3931C92260B3C6B00CADFC9 /* SceneDelegate.m */,
+				F3931C97260B3C6B00CADFC9 /* Main.storyboard */,
+				F3931C9D260B3C6C00CADFC9 /* Assets.xcassets */,
+				F3931C9F260B3C6C00CADFC9 /* LaunchScreen.storyboard */,
+				F3931CA2260B3C6C00CADFC9 /* Info.plist */,
+				F3932251260B61EB00CADFC9 /* AirBP-Demo.pch */,
+				F3931CA3260B3C6C00CADFC9 /* main.m */,
+				F3931C9A260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodeld */,
+			);
+			path = "AirBP-Demo";
+			sourceTree = "<group>";
+		};
+		F3931CAC260B3C6C00CADFC9 /* AirBP-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3931CAD260B3C6C00CADFC9 /* AirBP_DemoTests.m */,
+				F3931CAF260B3C6C00CADFC9 /* Info.plist */,
+			);
+			path = "AirBP-DemoTests";
+			sourceTree = "<group>";
+		};
+		F3931CB7260B3C6C00CADFC9 /* AirBP-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3931CB8260B3C6C00CADFC9 /* AirBP_DemoUITests.m */,
+				F3931CBA260B3C6C00CADFC9 /* Info.plist */,
+			);
+			path = "AirBP-DemoUITests";
+			sourceTree = "<group>";
+		};
+		F39321BC260B60C700CADFC9 /* Pkg */ = {
+			isa = PBXGroup;
+			children = (
+				F39322F9260DDB1800CADFC9 /* TypesDef.h */,
+				F393224B260B619B00CADFC9 /* AnswerPkg.h */,
+				F393224C260B619B00CADFC9 /* AnswerPkg.m */,
+				F3932245260B619300CADFC9 /* EndMeasurePkg.h */,
+				F3932246260B619300CADFC9 /* EndMeasurePkg.m */,
+				F393223F260B618B00CADFC9 /* StartMeasurePkg.h */,
+				F3932240260B618B00CADFC9 /* StartMeasurePkg.m */,
+				F3932239260B618200CADFC9 /* MeasureStatusPkg.h */,
+				F393223A260B618200CADFC9 /* MeasureStatusPkg.m */,
+				F3932233260B617900CADFC9 /* MeasureResultPkg.h */,
+				F3932234260B617900CADFC9 /* MeasureResultPkg.m */,
+				F393222E260B617200CADFC9 /* VoiceControlPkg.h */,
+				F393222D260B617200CADFC9 /* VoiceControlPkg.m */,
+				F3932228260B616B00CADFC9 /* StopPressurePkg.h */,
+				F3932227260B616B00CADFC9 /* StopPressurePkg.m */,
+				F3932221260B616300CADFC9 /* CalibrationSlopePkg.h */,
+				F3932222260B616300CADFC9 /* CalibrationSlopePkg.m */,
+				F393221B260B615A00CADFC9 /* CalibrationZeroPkg.h */,
+				F393221C260B615A00CADFC9 /* CalibrationZeroPkg.m */,
+				F3932216260B615000CADFC9 /* ConfiguartionPkg.h */,
+				F3932215260B615000CADFC9 /* ConfiguartionPkg.m */,
+				F3932210260B614900CADFC9 /* DeviceTempPkg.h */,
+				F393220F260B614900CADFC9 /* DeviceTempPkg.m */,
+				F3932209260B614000CADFC9 /* SetTimePkg.h */,
+				F393220A260B614000CADFC9 /* SetTimePkg.m */,
+				F3932203260B613200CADFC9 /* SetFactoryConfigPkg.h */,
+				F3932204260B613200CADFC9 /* SetFactoryConfigPkg.m */,
+				F39321FD260B612A00CADFC9 /* BatteryStatusPkg.h */,
+				F39321FE260B612A00CADFC9 /* BatteryStatusPkg.m */,
+				F39321F8260B612300CADFC9 /* RestorefactoryPkg.h */,
+				F39321F7260B612300CADFC9 /* RestorefactoryPkg.m */,
+				F39321F2260B611B00CADFC9 /* ResetPkg.h */,
+				F39321F1260B611B00CADFC9 /* ResetPkg.m */,
+				F39321E9260B611100CADFC9 /* FileListAckPfg.h */,
+				F39321E8260B611100CADFC9 /* FileListAckPfg.m */,
+				F39321EA260B611100CADFC9 /* FileListPkg.h */,
+				F39321EB260B611100CADFC9 /* FileListPkg.m */,
+				F39321E2260B610500CADFC9 /* InformationPkg.h */,
+				F39321E3260B610500CADFC9 /* InformationPkg.m */,
+				F39321D2260B60F800CADFC9 /* EndReadPkg.h */,
+				F39321D9260B60F800CADFC9 /* EndReadPkg.m */,
+				F39321D1260B60F800CADFC9 /* ReadContentAckPkg.h */,
+				F39321D5260B60F800CADFC9 /* ReadContentAckPkg.m */,
+				F39321D6260B60F800CADFC9 /* ReadContentPkg.h */,
+				F39321D0260B60F800CADFC9 /* ReadContentPkg.m */,
+				F39321D3260B60F800CADFC9 /* StartReadAckPkg.h */,
+				F39321D8260B60F800CADFC9 /* StartReadAckPkg.m */,
+				F39321D4260B60F800CADFC9 /* StartReadPkg.h */,
+				F39321D7260B60F800CADFC9 /* StartReadPkg.m */,
+				F39321C2260B60DC00CADFC9 /* CommonlyPkg.h */,
+				F39321C3260B60DC00CADFC9 /* CommonlyPkg.m */,
+				F39321BE260B60DC00CADFC9 /* EndWritePkg.h */,
+				F39321C6260B60DC00CADFC9 /* EndWritePkg.m */,
+				F39321C5260B60DC00CADFC9 /* PublicUtils.h */,
+				F39321C4260B60DC00CADFC9 /* PublicUtils.m */,
+				F39321C7260B60DC00CADFC9 /* StartWritePkg.h */,
+				F39321BF260B60DC00CADFC9 /* StartWritePkg.m */,
+				F39321BD260B60DC00CADFC9 /* TypesDef.h */,
+				F39321C0260B60DC00CADFC9 /* WriteContentPkg.h */,
+				F39321C1260B60DC00CADFC9 /* WriteContentPkg.m */,
+			);
+			path = Pkg;
+			sourceTree = "<group>";
+		};
+		F3932276260B65BD00CADFC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3932277260B65BD00CADFC9 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3932292260C33AB00CADFC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F393229B260C33C300CADFC9 /* VTBatteryInfo.h */,
+				F393229C260C33C300CADFC9 /* VTBatteryInfo.m */,
+				F39322A6260C33C300CADFC9 /* VTBloodPressureResultInfo.h */,
+				F3932299260C33C300CADFC9 /* VTBloodPressureResultInfo.m */,
+				F39322A1260C33C300CADFC9 /* VTCalibrationSlopeInfo.h */,
+				F3932298260C33C300CADFC9 /* VTCalibrationSlopeInfo.m */,
+				F3932294260C33C300CADFC9 /* VTCalibrationZeroInfo.h */,
+				F39322A2260C33C300CADFC9 /* VTCalibrationZeroInfo.m */,
+				F39322A0260C33C300CADFC9 /* VTConfiguartionInfo.h */,
+				F393229D260C33C300CADFC9 /* VTConfiguartionInfo.m */,
+				F393229A260C33C300CADFC9 /* VTDeviceInfo.h */,
+				F39322A4260C33C300CADFC9 /* VTDeviceInfo.m */,
+				F3932297260C33C300CADFC9 /* VTDeviceTemp.h */,
+				F39322A3260C33C300CADFC9 /* VTDeviceTemp.m */,
+				F39322A5260C33C300CADFC9 /* VTFileParser.h */,
+				F3932295260C33C300CADFC9 /* VTFileParser.m */,
+				F393229E260C33C300CADFC9 /* VTPlusConfigurationInfo.h */,
+				F3932296260C33C300CADFC9 /* VTPlusConfigurationInfo.m */,
+				F393229F260C33C300CADFC9 /* VTRealTimePressureInfo.h */,
+				F3932293260C33C200CADFC9 /* VTRealTimePressureInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F39322F0260DC0FF00CADFC9 /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				F39321BC260B60C700CADFC9 /* Pkg */,
+				F3932270260B656E00CADFC9 /* VTSingletonClass.h */,
+				F3932271260B656E00CADFC9 /* VTSingletonClass.m */,
+				F3931F4B260B57E700CADFC9 /* VTNoticeName.h */,
+				F3931F3C260B570000CADFC9 /* BTUtils.h */,
+				F3931F3D260B570000CADFC9 /* BTUtils.m */,
+				F3931F36260B56F000CADFC9 /* UARTPeripheral.h */,
+				F3931F37260B56F000CADFC9 /* UARTPeripheral.m */,
+				F3931F3E260B570000CADFC9 /* BTCommunication.h */,
+				F3931F3F260B570000CADFC9 /* BTCommunication.m */,
+				F3931F46260B574900CADFC9 /* BleHeaderfile.h */,
+				F3931F47260B574A00CADFC9 /* BTDefines.h */,
+				F39322E4260D702F00CADFC9 /* UIBezierPath+Smoothing.h */,
+				F39322E5260D702F00CADFC9 /* UIBezierPath+Smoothing.m */,
+			);
+			path = BlueTooth;
+			sourceTree = "<group>";
+		};
+		F39322F3260DC32A00CADFC9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F393230D260DE58100CADFC9 /* VTCommon.h */,
+				F393230E260DE58100CADFC9 /* VTCommon.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F39322F4260DC35A00CADFC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3931C94260B3C6B00CADFC9 /* VTViewController.h */,
+				F3931C95260B3C6B00CADFC9 /* VTViewController.m */,
+				F39322DF260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.h */,
+				F39322DE260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F39322F5260DC3AE00CADFC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F39322EA260D704D00CADFC9 /* VTDrawView.h */,
+				F39322EB260D704D00CADFC9 /* VTDrawView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3931C8A260B3C6B00CADFC9 /* AirBP-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3931CBD260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-Demo" */;
+			buildPhases = (
+				F3931C87260B3C6B00CADFC9 /* Sources */,
+				F3931C88260B3C6B00CADFC9 /* Frameworks */,
+				F3931C89260B3C6B00CADFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirBP-Demo";
+			productName = "AirBP-Demo";
+			productReference = F3931C8B260B3C6B00CADFC9 /* AirBP-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3931CA8260B3C6C00CADFC9 /* AirBP-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3931CC0260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-DemoTests" */;
+			buildPhases = (
+				F3931CA5260B3C6C00CADFC9 /* Sources */,
+				F3931CA6260B3C6C00CADFC9 /* Frameworks */,
+				F3931CA7260B3C6C00CADFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3931CAB260B3C6C00CADFC9 /* PBXTargetDependency */,
+			);
+			name = "AirBP-DemoTests";
+			productName = "AirBP-DemoTests";
+			productReference = F3931CA9260B3C6C00CADFC9 /* AirBP-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3931CB3260B3C6C00CADFC9 /* AirBP-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3931CC3260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-DemoUITests" */;
+			buildPhases = (
+				F3931CB0260B3C6C00CADFC9 /* Sources */,
+				F3931CB1260B3C6C00CADFC9 /* Frameworks */,
+				F3931CB2260B3C6C00CADFC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3931CB6260B3C6C00CADFC9 /* PBXTargetDependency */,
+			);
+			name = "AirBP-DemoUITests";
+			productName = "AirBP-DemoUITests";
+			productReference = F3931CB4260B3C6C00CADFC9 /* AirBP-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3931C83260B3C6B00CADFC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F3931C8A260B3C6B00CADFC9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F3931CA8260B3C6C00CADFC9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F3931C8A260B3C6B00CADFC9;
+					};
+					F3931CB3260B3C6C00CADFC9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F3931C8A260B3C6B00CADFC9;
+					};
+				};
+			};
+			buildConfigurationList = F3931C86260B3C6B00CADFC9 /* Build configuration list for PBXProject "AirBP-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"es-419",
+				tr,
+				fr,
+			);
+			mainGroup = F3931C82260B3C6B00CADFC9;
+			productRefGroup = F3931C8C260B3C6B00CADFC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3931C8A260B3C6B00CADFC9 /* AirBP-Demo */,
+				F3931CA8260B3C6C00CADFC9 /* AirBP-DemoTests */,
+				F3931CB3260B3C6C00CADFC9 /* AirBP-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3931C89260B3C6B00CADFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3931CA1260B3C6C00CADFC9 /* LaunchScreen.storyboard in Resources */,
+				F3931C9E260B3C6C00CADFC9 /* Assets.xcassets in Resources */,
+				F389AD2E2611D13F00A15451 /* LICENSE in Resources */,
+				F3931C99260B3C6B00CADFC9 /* Main.storyboard in Resources */,
+				F389AD2F2611D13F00A15451 /* README.mdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CA7260B3C6C00CADFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CB2260B3C6C00CADFC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3931C87260B3C6B00CADFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39322AB260C33C300CADFC9 /* VTBloodPressureResultInfo.m in Sources */,
+				F3931F41260B570000CADFC9 /* BTCommunication.m in Sources */,
+				F3931CA4260B3C6C00CADFC9 /* main.m in Sources */,
+				F39322AF260C33C300CADFC9 /* VTDeviceTemp.m in Sources */,
+				F3931C96260B3C6B00CADFC9 /* VTViewController.m in Sources */,
+				F3932223260B616300CADFC9 /* CalibrationSlopePkg.m in Sources */,
+				F3932217260B615000CADFC9 /* ConfiguartionPkg.m in Sources */,
+				F39322AE260C33C300CADFC9 /* VTCalibrationZeroInfo.m in Sources */,
+				F393222F260B617200CADFC9 /* VoiceControlPkg.m in Sources */,
+				F39321CC260B60DC00CADFC9 /* EndWritePkg.m in Sources */,
+				F39321F3260B611B00CADFC9 /* ResetPkg.m in Sources */,
+				F39321DE260B60F800CADFC9 /* EndReadPkg.m in Sources */,
+				F3932235260B617900CADFC9 /* MeasureResultPkg.m in Sources */,
+				F3931C9C260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodeld in Sources */,
+				F39322E6260D702F00CADFC9 /* UIBezierPath+Smoothing.m in Sources */,
+				F39321ED260B611100CADFC9 /* FileListPkg.m in Sources */,
+				F39321DC260B60F800CADFC9 /* StartReadPkg.m in Sources */,
+				F39322AC260C33C300CADFC9 /* VTBatteryInfo.m in Sources */,
+				F39321F9260B612300CADFC9 /* RestorefactoryPkg.m in Sources */,
+				F393224D260B619B00CADFC9 /* AnswerPkg.m in Sources */,
+				F3931F38260B56F000CADFC9 /* UARTPeripheral.m in Sources */,
+				F393230F260DE58100CADFC9 /* VTCommon.m in Sources */,
+				F3932272260B656E00CADFC9 /* VTSingletonClass.m in Sources */,
+				F39321DB260B60F800CADFC9 /* ReadContentAckPkg.m in Sources */,
+				F389AD2D2611D13F00A15451 /* MBProgressHUD.m in Sources */,
+				F39321C8260B60DC00CADFC9 /* StartWritePkg.m in Sources */,
+				F3932247260B619300CADFC9 /* EndMeasurePkg.m in Sources */,
+				F39321CA260B60DC00CADFC9 /* CommonlyPkg.m in Sources */,
+				F39321EC260B611100CADFC9 /* FileListAckPfg.m in Sources */,
+				F39322B0260C33C300CADFC9 /* VTDeviceInfo.m in Sources */,
+				F39322A9260C33C300CADFC9 /* VTPlusConfigurationInfo.m in Sources */,
+				F3931C90260B3C6B00CADFC9 /* AppDelegate.m in Sources */,
+				F3932229260B616B00CADFC9 /* StopPressurePkg.m in Sources */,
+				F39322AA260C33C300CADFC9 /* VTCalibrationSlopeInfo.m in Sources */,
+				F3932211260B614900CADFC9 /* DeviceTempPkg.m in Sources */,
+				F39321CB260B60DC00CADFC9 /* PublicUtils.m in Sources */,
+				F3932241260B618B00CADFC9 /* StartMeasurePkg.m in Sources */,
+				F39322E0260C74DB00CADFC9 /* VTConnectDeviceSuccessVC.m in Sources */,
+				F39321DD260B60F800CADFC9 /* StartReadAckPkg.m in Sources */,
+				F3931C93260B3C6B00CADFC9 /* SceneDelegate.m in Sources */,
+				F39321E4260B610500CADFC9 /* InformationPkg.m in Sources */,
+				F39321C9260B60DC00CADFC9 /* WriteContentPkg.m in Sources */,
+				F393221D260B615A00CADFC9 /* CalibrationZeroPkg.m in Sources */,
+				F3932205260B613200CADFC9 /* SetFactoryConfigPkg.m in Sources */,
+				F39322AD260C33C300CADFC9 /* VTConfiguartionInfo.m in Sources */,
+				F39322EC260D704D00CADFC9 /* VTDrawView.m in Sources */,
+				F39322A7260C33C300CADFC9 /* VTRealTimePressureInfo.m in Sources */,
+				F39321DA260B60F800CADFC9 /* ReadContentPkg.m in Sources */,
+				F39321FF260B612A00CADFC9 /* BatteryStatusPkg.m in Sources */,
+				F39322A8260C33C300CADFC9 /* VTFileParser.m in Sources */,
+				F393223B260B618200CADFC9 /* MeasureStatusPkg.m in Sources */,
+				F393220B260B614000CADFC9 /* SetTimePkg.m in Sources */,
+				F3931F40260B570000CADFC9 /* BTUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CA5260B3C6C00CADFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3931CAE260B3C6C00CADFC9 /* AirBP_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3931CB0260B3C6C00CADFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3931CB9260B3C6C00CADFC9 /* AirBP_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3931CAB260B3C6C00CADFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3931C8A260B3C6B00CADFC9 /* AirBP-Demo */;
+			targetProxy = F3931CAA260B3C6C00CADFC9 /* PBXContainerItemProxy */;
+		};
+		F3931CB6260B3C6C00CADFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3931C8A260B3C6B00CADFC9 /* AirBP-Demo */;
+			targetProxy = F3931CB5260B3C6C00CADFC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3931C97260B3C6B00CADFC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3931C98260B3C6B00CADFC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3931C9F260B3C6C00CADFC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3931CA0260B3C6C00CADFC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3931CBB260B3C6C00CADFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3931CBC260B3C6C00CADFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3931CBE260B3C6C00CADFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AirBP-Demo/AirBP-Demo.pch";
+				INFOPLIST_FILE = "AirBP-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3931CBF260B3C6C00CADFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AirBP-Demo/AirBP-Demo.pch";
+				INFOPLIST_FILE = "AirBP-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3931CC1260B3C6C00CADFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				INFOPLIST_FILE = "AirBP-DemoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBP-Demo.app/AirBP-Demo";
+			};
+			name = Debug;
+		};
+		F3931CC2260B3C6C00CADFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				INFOPLIST_FILE = "AirBP-DemoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBP-Demo.app/AirBP-Demo";
+			};
+			name = Release;
+		};
+		F3931CC4260B3C6C00CADFC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				INFOPLIST_FILE = "AirBP-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AirBP-Demo";
+			};
+			name = Debug;
+		};
+		F3931CC5260B3C6C00CADFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84Z5TBSNUY;
+				INFOPLIST_FILE = "AirBP-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aw.AirBP-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AirBP-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3931C86260B3C6B00CADFC9 /* Build configuration list for PBXProject "AirBP-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3931CBB260B3C6C00CADFC9 /* Debug */,
+				F3931CBC260B3C6C00CADFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3931CBD260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3931CBE260B3C6C00CADFC9 /* Debug */,
+				F3931CBF260B3C6C00CADFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3931CC0260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3931CC1260B3C6C00CADFC9 /* Debug */,
+				F3931CC2260B3C6C00CADFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3931CC3260B3C6C00CADFC9 /* Build configuration list for PBXNativeTarget "AirBP-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3931CC4260B3C6C00CADFC9 /* Debug */,
+				F3931CC5260B3C6C00CADFC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3931C9A260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3931C9B260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodel */,
+			);
+			currentVersion = F3931C9B260B3C6B00CADFC9 /* AirBP_Demo.xcdatamodel */;
+			path = AirBP_Demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3931C83260B3C6B00CADFC9 /* Project object */;
+}
